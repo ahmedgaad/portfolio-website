@@ -1,0 +1,46 @@
+/*----------------pc devices---------*/
+@media only screen and(min-width: 1000px) {
+    .head{
+       
+        border: 1px solid black;
+    }
+
+#c{
+    background-color: chocolate;
+    width: 100%;
+    height: 100px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="head">
+        <h1 id="title">website name</h1>
+    </header>
+    <main class="main__sec">
+      <p id="main__text"></p>
+    </main>
+    <aside class="right__aside">
+      <nav class="main__nav">
+          <ul id="main__list">
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+          </ul>
+      </nav>
+    </aside>
+    <footer class="foot">
+        <p id="copy">All copy rights are reserved@ my website</p>
+    </footer>
