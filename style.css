@@ -1,21 +1,146 @@
-/*----------------pc devices---------*/
-@media only screen and(min-width: 1000px) {
-    .head{
-       
-        border: 1px solid black;
-        background-color: chocolate;
-        width: 100%;
-        height: 100px;
-        display: inline-block;
+/* Style the header with a grey background and some padding */
+body{
+    margin: .5px;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+     }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+  }
+  
+  /* Style the logo link (notice that we set
+   the same value of line-height and font-size to prevent the header to increase 
+   when the font gets bigger */
+   .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less,
+   stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
     }
+    .header-right {
+      float: none;
+    }
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(151, 151, 151);
+    color: white;
+    text-align: center;
+ }
+  
+ .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
 
-#c{
-   
-}
-#ul{
-   
-}
-}
+  #img{
+      float: right;
+      margin: 20px;
+      
+  }
+  .h4{
+      text-align: center;
+      font-size: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+      padding: -5px;
+  }
+ 
+  #h3{
+    text-align: center;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: rgb(248, 33, 33);
+    margin-left: 100px;  
+  }
+
+  #h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: rgb(248, 33, 33);
+    
+  }
+
+
+  
+  
+  
 
 
 
@@ -25,27 +150,3 @@
 
 
 
-
-
-
-
-
-
-<header class="head">
-        <h1 id="title">website name</h1>
-    </header>
-    <main class="main__sec">
-      <p id="main__text"></p>
-    </main>
-    <aside class="right__aside">
-      <nav class="main__nav">
-          <ul id="main__list">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-          </ul>
-      </nav>
-    </aside>
-    <footer class="foot">
-        <p id="copy">All copy rights are reserved@ my website</p>
-    </footer>
